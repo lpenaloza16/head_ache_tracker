@@ -1,0 +1,43 @@
+/* temp font */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#section_1 {
+  padding-top: 4rem;
+}
+.section {
+  text-align: center;
+  padding-top: 0.61rem;
+
+  border-radius: 4px;
+}
+.wrapper {
+  background-image: url("paper_bg.jpg");
+  /* background-size: 0.1rem; */
+  height: 64em;
+}
+
+.btn_chz {
+  display: inline-block;
+  background-color: grey;
+  margin-left: 1rem;
+  padding: 0.39rem 1.39rem;
+  border-radius: 3px;
+}
+.btn_desc {
+  display: inline-block;
+  background-color: grey;
+  margin-left: 1rem;
+  padding: 0.39rem 0.61rem;
+  border-radius: 0.39rem;
+}
+
+#rating {
+  margin: 0;
+}
+
+.sai_container {
+  padding-top: 2rem;
+  text-align: center;
+}
