@@ -3,7 +3,7 @@
 // All of the Node.js APIs are available in this process.
 
 document.querySelector("button").addEventListener("click", function () {
-  html2canvas(document.querySelector(".wrapper"), {
+  html2canvas(document.querySelector("body"), {
     onrendered: function (canvas) {
       // document.body.appendChild(canvas);
       return Canvas2Image.saveAsPNG(canvas);
