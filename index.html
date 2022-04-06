@@ -13,57 +13,73 @@
       crossorigin="anonymous"
     />
 
-    <title>App</title>
+    <title>Headache Tracker</title>
   </head>
   <body>
-    <header class="center_item">
-      <h3 id="header_month">currentDate</h3>
-      <h3 id="header_date"></h3>
-      <h4>Migraine Tracker:</h4>
+    <header class="center_item header">
+      <h3 id="header_month" class="flush_mnp">currentDate</h3>
+      <h3 id="header_date" class="flush_mnp"></h3>
+      <h4 class="flush_mnp">Migraine Tracker:</h4>
     </header>
     <!-- wip -->
-    <table clas>
+    <section id="app_body" class="wrapper">
+    <table id="table">
       <tr>
         <td class="table_labels_containers">
           <label class="table_labels" for="">Start Time: </label>
         </td>
-        <td><input type="text" name="" id="" /></td>
+        <td><input class="form_text form-control" type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td class="table_labels_containers">
           <label class="table_labels" for="">End Time: </label>
         </td>
-        <td><input type="text" name="" id="" /></td>
+        <td><input class="form_text form-control" type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td class="table_labels_containers">
           <label class="table_labels" for="">Migraine Attack Type: </label>
         </td>
-        <td><input type="text" name="" id="" /></td>
+        <td><input class="form_text form-control" type="text" name="" id="" /></td>
       </tr>
       <tr>
         <td class="table_labels_containers">
           <label class="table_labels" for="">Pain Level: </label>
         </td>
-        <td>
-          <ul>
-            <li class="btn_chz">1</li>
-            <li class="btn_chz">2</li>
-            <li class="btn_chz">3</li>
-            <li class="btn_chz">4</li>
-            <li class="btn_chz">5</li>
-            <li class="btn_chz">6</li>
-            <li class="btn_chz">7</li>
-            <li class="btn_chz">8</li>
-            <li class="btn_chz">9</li>
-            <li class="btn_chz">10</li>
-          </ul>
-        </td>
+
       </tr>
+      
     </table>
-    <div><em>This is just the divider</em></div>
+
+    <ul>
+      <li class="btn_chz">1</li>
+      <li class="btn_chz">2</li>
+      <li class="btn_chz">3</li>
+      <li class="btn_chz">4</li>
+      <li class="btn_chz">5</li>
+      <li class="btn_chz">6</li>
+      <li class="btn_chz">7</li>
+      <li class="btn_chz">8</li>
+      <li class="btn_chz">9</li>
+      <li class="btn_chz">10</li>
+    </ul>
+    <ul class="center_item mood_meter">
+      <li class="btn_desc btn btn-primary">Hurts a Bit</li>
+      <li class="btn_desc btn btn-info">Mild</li>
+      <li class="btn_desc btn btn-secondary">Moderate</li>
+      <li class="btn_desc btn btn-warning">Severe</li>
+      <li class="btn_desc btn btn-danger">Hurts Worst</li>
+    </ul>
+  </div>
+</div>
+<div class="sai_container">
+  <button class="btn btn-success" type="button" class="btn btn-default">
+    <strong>Save Report</strong>
+  </button>
+</div>
+</section>
     <!-- wip -->
-    <section class="wrapper">
+    <!-- <section class="wrapper">
       <div class="parent_log">
         <div id="section_1" class="section">
           <label class="section_item" for="startTime">Start Time: </label>
@@ -90,22 +106,12 @@
             <li class="btn_chz">9</li>
             <li class="btn_chz">10</li>
           </ul>
-          <ul>
-            <li class="btn_desc btn btn-primary">Hurts a Bit</li>
-            <li class="btn_desc btn btn-info">Mild</li>
-            <li class="btn_desc btn btn-secondary">Moderate</li>
-            <li class="btn_desc btn btn-warning">Severe</li>
-            <li class="btn_desc btn btn-danger">Hurts Worst</li>
-          </ul>
-        </div>
-      </div>
-      <div class="sai_container">
-        <button class="btn btn-success" type="button" class="btn btn-default">
-          Save as image
-        </button>
-      </div>
-    </section>
-    <script src="script.js"></script>
+          
+    </section> -->
+    <script>
+      require("./renderer.js");
+    </script>
+    <!-- <script src="script.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
